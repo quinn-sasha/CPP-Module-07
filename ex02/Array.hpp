@@ -11,7 +11,7 @@ class Array {
 
  public:
   Array() : num_elmes_(0), array_(0) {}
-  Array(unsigned int n) : num_elmes_(n) { array_ = new T[n]; }
+  explicit Array(unsigned int n) : num_elmes_(n) { array_ = new T[n]; }
   Array(const Array& other);
   Array& operator=(const Array& other);
   ~Array() { delete[] array_; }
