@@ -1,4 +1,3 @@
-#include <cstddef>
 #include <iostream>
 #include <string>
 
@@ -17,7 +16,7 @@ void display_uppercase_string(std::string str) {
 int main() {
   int int_arr[10];
   for (int i = 0; i < 10; i++) {
-    int_arr[i] = (i + 1) * 2;
+    int_arr[i] = (i + 1) * 2;  // int_arr: 2, 4, ..., 20
   }
   typedef void FuncType1(int);
   iter<int, FuncType1>(int_arr, 10, display_integer);
